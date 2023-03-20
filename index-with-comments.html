@@ -1,30 +1,33 @@
 <!-- Declaring a document type: HTML5 -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Setting the character encoding -->
-    <meta charset="UTF-8">
 
-    <!-- Viewport for responsive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <!-- Setting the character encoding -->
+  <meta charset="UTF-8">
 
-    <!-- Document title -->
-    <title>Document Title</title>
+  <!-- Viewport for mobile responsive aspect -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Document description: Important for SEO, used by search engines -->
-    <meta name="description" content="Description of the document.">
+  <!-- Document title -->
+  <title>Document Title</title>
 
-    <!-- Older SEO usage, not more supported by Google -->
-    <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
+  <!-- Document description: Important for SEO, used by search engines -->
+  <meta name="description" content="Description of the document.">
 
-    <!-- Set an tab icon -->
-    <link rel="icon" href="favicon.ico">
+  <!-- Older SEO usage, not anymore supported by Google -->
+  <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
 
-    
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <meta name="author" content="Author Name">
-    
-    <!-- The "robots" meta tag is an HTML tag that is used to provide search engines with 
+  <!-- Set the author of the document -->
+  <meta name="author" content="Author name">
+
+  <!-- Set an tab icon -->
+  <link rel="icon" href="favicon.ico">
+
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- The "robots" meta tag is an HTML tag that is used to provide search engines with 
         instructions on how to crawl or index a web page. It tells search engine crawlers 
         whether to index a page, follow the links on the page, or whether to prevent the 
         page from being indexed or crawled. 
@@ -36,31 +39,72 @@
         "noarchive": Prevents search engines from showing a cached copy of the page.
         "noimageindex": Prevents search engines from indexing images on the page.    
     -->
-    <meta name="robots" content="index,follow">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#000000">
-    <meta property="og:title" content="Open Graph Title">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.example.com/">
-    <meta property="og:image" content="http://www.example.com/image.png">
-    <meta property="og:description" content="Open Graph Description">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@username">
-    <meta name="twitter:title" content="Twitter Title">
-    <meta name="twitter:description" content="Twitter Description">
-    <meta name="twitter:image" content="http://www.example.com/image.png">
-    <meta name="application-name" content="Application Name">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="google-site-verification" content="verification-code">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
-    <!-- Link CSS stylesheet to the HTML document -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+  <meta name="robots" content="index,follow">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Add Open Graph tags for social media -->
+  <meta property="og:title" content="Open Graph Title">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.example.com/">
+  <meta property="og:image" content="http://www.example.com/image.png">
+  <meta property="og:description" content="Open Graph Description">
+
+  <!-- Add Twitter Card tags for social media -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@username">
+  <meta name="twitter:title" content="Twitter Title">
+  <meta name="twitter:description" content="Twitter Description">
+  <meta name="twitter:image" content="http://www.example.com/image.png">
+  <meta name="application-name" content="Application Name">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="google-site-verification" content="verification-code">
+
+  <!-- Set the canonical URL for duplicate content -->
+  <link rel="canonical" href="https://www.example.com/page.html">
+
+  <!-- Set the base URL for relative URLs -->
+  <base href="https://www.example.com/">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+
+  <!-- Link CSS stylesheet to the HTML document -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Set the DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="//external-resource.com">
+
+  <!-- Set the preconnect for external resources -->
+  <link rel="preconnect" href="//external-resource.com">
+
+  <!-- Add structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Organization name",
+    "url": "https://www.example.com/",
+    "logo": "https://www.example.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-555-5555",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
+  <!-- Link JavaScript file to the HTML document 
+        "defer": Load script after loading HTML content
+        "async": Load with HTML content ascynronously
+    -->
+  <script src="script.js"></script>
 </head>
+
 <body>
-    <!-- Body content goes here -->
-  </body>
+  <!-- Body content goes here -->
+</body>
+
 </html>
