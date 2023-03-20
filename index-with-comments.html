@@ -1,6 +1,8 @@
 <!-- Declaring a document type: HTML5 -->
 <!DOCTYPE html>
-<html>
+
+<!-- Set language of the webpage -->
+<html lang="us-US">
 
 <head>
   <!-- Setting the character encoding -->
@@ -21,27 +23,30 @@
   <!-- Set the author of the document -->
   <meta name="author" content="Author name">
 
-  <!-- Set an tab icon -->
+  <!-- Set a tab icon -->
   <link rel="icon" href="favicon.ico">
 
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- The "robots" meta tag is an HTML tag that is used to provide search engines with 
-        instructions on how to crawl or index a web page. It tells search engine crawlers 
-        whether to index a page, follow the links on the page, or whether to prevent the 
-        page from being indexed or crawled. 
+  instructions on how to crawl or index a web page. It tells search engine crawlers 
+  whether to index a page, follow the links on the page, or whether to prevent the 
+  page from being indexed or crawled. 
 
-        "index": Allows the page to be indexed by search engines.
-        "noindex": Prevents search engines from indexing the page.
-        "follow": Allows search engine crawlers to follow the links on the page.
-        "nofollow": Instructs search engine crawlers not to follow the links on the page.
-        "noarchive": Prevents search engines from showing a cached copy of the page.
-        "noimageindex": Prevents search engines from indexing images on the page.    
+    "index": Allows the page to be indexed by search engines.
+    "noindex": Prevents search engines from indexing the page.
+    "follow": Allows search engine crawlers to follow the links on the page.
+    "nofollow": Instructs search engine crawlers not to follow the links on the page.
+    "noarchive": Prevents search engines from showing a cached copy of the page.
+    "noimageindex": Prevents search engines from indexing images on the page.    
     -->
   <meta name="robots" content="index,follow">
 
+  <!-- By including the X-UA-Compatible meta tag in the HTML head section of a webpage, web developers can indicate to the browser which version of IE should be used to render the page. -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Set theme color is often applied on mobile browsers -->
   <meta name="theme-color" content="#000000">
 
   <!-- Add Open Graph tags for social media -->
@@ -58,17 +63,30 @@
   <meta name="twitter:description" content="Twitter Description">
   <meta name="twitter:image" content="http://www.example.com/image.png">
   <meta name="application-name" content="Application Name">
+
+  <!-- This meta tag is only used by the Microsoft Edge browser. The "msapplication" meta tag has several subtags that can be used to define different settings for Windows applications. Some of the most commonly used subtags include:
+    "name": Defines the name of the application.
+    "TileColor": Defines the color to be used for the application's tile in the Windows Start menu or taskbar.
+    "TileImage": Specifies the image to be used for the application's tile in the Windows Start menu or taskbar.
+    "Url": Defines the URL to be used when the application is launched.
+    "Window": Defines the settings for the application's window, such as its size, position, and mode.
+   -->
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-TileImage" content="mstile-144x144.png">
   <meta name="msapplication-config" content="browserconfig.xml">
   <meta name="google-site-verification" content="verification-code">
 
-  <!-- Set the canonical URL for duplicate content -->
+  <!-- Set the canonical URL for duplicate content 
+  A canonical meta tag is an HTML element that is used to indicate to search engines the preferred or canonical version of a web page when there are multiple versions of the same content available on different URLs.
+
+  For example, a blog post may be accessible through several URLs such as its original URL, a category page, a tag page, or an archive page. In such cases, using a canonical meta tag helps search engines to determine the original source of the content and avoid duplicate content issues that could negatively affect the site's search engine rankings.
+  -->
   <link rel="canonical" href="https://www.example.com/page.html">
 
   <!-- Set the base URL for relative URLs -->
   <base href="https://www.example.com/">
 
+  <!-- The link element specifies a relationship between the current document and the linked document. In this case, the relationship is "alternate," indicating that the linked document is an alternative version of the current document. The type attribute specifies the media type of the linked document, which in this case is application/rss+xml, indicating an RSS feed. -->
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
 
   <!-- Link CSS stylesheet to the HTML document -->
@@ -100,7 +118,7 @@
         "defer": Load script after loading HTML content
         "async": Load with HTML content ascynronously
     -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
